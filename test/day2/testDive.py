@@ -13,3 +13,8 @@ class TestDive(unittest.TestCase):
     def test_should_return_final_depth_after_dive(self):
         final_depth = Dive.get_final_depth(DIVE_INSTRUCTION)
         self.assertEqual(final_depth, 10)
+
+    def test_should_return_final_depth_considering_aim_value(self):
+        depth = Dive. \
+            get_horizontal_and_depth_position_with_aim(DIVE_INSTRUCTION)[1]
+        self.assertEqual(depth, 60)
