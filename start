@@ -1,5 +1,0 @@
-#!/bin/bash
-
-python3 -m venv ./.app && source ./.app/bin/activate
-
-python -m unittest
